@@ -1,0 +1,13 @@
+diff --git a/node_modules/bugsnag-react-native/cocoa/BugsnagReactNative.m b/node_modules/bugsnag-react-native/cocoa/BugsnagReactNative.m
+index 87b4b0a..eed386b 100644
+--- a/node_modules/bugsnag-react-native/cocoa/BugsnagReactNative.m
++++ b/node_modules/bugsnag-react-native/cocoa/BugsnagReactNative.m
+@@ -354,7 +354,7 @@ - (NSString *)findReactNativeVersion {
+     static dispatch_once_t onceToken;
+     static NSString *BSGReactNativeVersion = nil;
+     dispatch_once(&onceToken, ^{
+-        NSDictionary *versionMap = RCTGetReactNativeVersion();
++        NSDictionary *versionMap = RCT_REACT_NATIVE_VERSION;
+         NSNumber *major = versionMap[@"major"];
+         NSNumber *minor = versionMap[@"minor"];
+         NSNumber *patch = versionMap[@"patch"];

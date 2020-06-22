@@ -1,0 +1,2 @@
+import MessageToArtistViewController from './MessageToArtistViewController';
+export default MessageToArtistViewController;

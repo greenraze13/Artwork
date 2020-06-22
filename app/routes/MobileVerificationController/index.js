@@ -1,0 +1,2 @@
+import MobileVerificationController from './MobileVerificationController';
+export default MobileVerificationController;
